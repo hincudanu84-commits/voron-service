@@ -1,0 +1,25 @@
+VORON SERVICE — versiune simplă de început
+
+1. Instalează Python 3 de pe https://www.python.org/downloads/
+   La instalare bifează "Add Python to PATH".
+2. Dezarhivează voron_service.zip într-un folder.
+3. Deschide folderul voron_service.
+4. În bara de adresă a folderului scrie cmd și apasă Enter.
+5. În fereastra neagră execută:
+   py -m pip install flask
+6. Apoi execută:
+   py app.py
+7. Deschide browserul la:
+   http://127.0.0.1:5000
+
+Autentificare inițială:
+   Utilizator: admin
+   Parolă: admin123
+
+IMPORTANT:
+- Schimbă parola implicită înainte de a folosi aplicația cu date reale.
+- Datele se păstrează în fișierul voron_service.db din acest folder.
+- Fă copii de siguranță ale acestui fișier.
+- Această versiune este pentru testare locală pe un calculator. Nu o publica direct pe internet fără configurarea securității, HTTPS, parolei și backup-ului.
+- Reducerile sunt setate inițial: Standard 5%, Silver 10%, VIP Gold 15%.
+- Cardurile se pot tipări din browser; codul unic este identificatorul cardului.

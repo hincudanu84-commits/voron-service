@@ -1,0 +1,7 @@
+<!doctype html><html lang="ro"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>VORON SERVICE</title><link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}"></head>
+<body><div class="layout"><aside class="sidebar"><div class="brand"><span>V</span> VORON <small>SERVICE</small></div>
+<nav><a href="/">▦ Dashboard</a><a href="/clients">♙ Clienți</a><a href="/cars">🚘 Automobile</a><a href="/jobs">🔧 Reparații</a><a href="/cards">▣ Carduri reducere</a></nav>
+<div class="sidebottom"><a href="/logout">Ieșire</a></div></aside><main class="main"><header><div><b>VORON SERVICE</b><small>Panou de administrare</small></div><span class="admin">Administrator</span></header>
+{% with messages = get_flashed_messages() %}{% if messages %}<div class="flash">{% for m in messages %}{{m}}{% endfor %}</div>{% endif %}{% endwith %}
+{% block content %}{% endblock %}</main></div></body></html>
